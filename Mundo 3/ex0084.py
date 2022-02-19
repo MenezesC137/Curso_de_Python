@@ -1,6 +1,6 @@
 pessoa = list()
 dado = list()
-maior = menor =  0
+maior = menor = 0
 linha = '-' * 30
 while True:
     dado.append(str(input('Nome: ')))
