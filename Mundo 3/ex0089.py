@@ -1,7 +1,7 @@
 ficha = list()
 linha = '-' * 25
-while True:
 #variaveis
+while True:
     nome = str(input('Nome: '))
     n1 = float(input('Nota 1: '))
     n2 = float(input('Nota 2: '))
