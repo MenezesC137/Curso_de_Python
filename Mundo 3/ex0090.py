@@ -1,17 +1,13 @@
 linha = '-' * 30
 aluno = dict()
-nome = str(input('Nome: '))
-aluno['nome'] = nome
-media = float(input(f'Media do {nome}: '))
-aluno['media'] = media
+aluno['Nome'] = str(input('Nome: '))
+aluno['media'] = float(input(f'Media do {aluno["Nome"]}: '))
 print(linha)
+if aluno['media'] >= 7:
+    aluno['Situação'] = 'Aprovado'
+elif 5 <= aluno['media'] < 7:
+    aluno['Situação'] = 'Recuperação'
+else:
+    aluno['Situação'] = 'Reprovado'
 for key, val in aluno.items():
     print(f' - {key} é igual a {val}')
-if media <= 5:
-    print(f' - Situação é igual a Reprovado')
-elif 5 > media <= 7:
-    print(f' - Situação é igual a Recuperação')
-elif 7 > media <= 10:
-    print(f' - Situação é igual a Aprovado')
-else:
-    sit = 'Nota digitada errada'
