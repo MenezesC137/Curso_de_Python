@@ -4,7 +4,7 @@ from operator import itemgetter
 jogo = {'jogador 1': randint(1, 6),
         'jogador 2': randint(1, 6),
         'jogador 3': randint(1, 6),
-        'jogador 4': randint(1, 6),}
+        'jogador 4': randint(1, 6)}
 ranking = list()
 print('Valores sorteados: ')
 for k, v in jogo.items():
